@@ -60,13 +60,13 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Home</li>
+				<li class="active">Gerenciamento de Pessoas</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">SINARM - Home</h1>
+				<h1 class="page-header">SINARM - Pessoas</h1>
 			</div>
 		</div><!--/.row-->
 		
