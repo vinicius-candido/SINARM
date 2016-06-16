@@ -68,7 +68,7 @@
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">SINARM - Cadastro de Arma de Fogo</h1>
+				<h1 class="page-header">SINARM - Cadastro de Registro</h1>
 			</div>
 		</div><!--/.row-->
 		
@@ -80,39 +80,24 @@
 					<div class="panel-body">
 						<div class="col-md-6">
 						<form role="form">
-							<fieldset>
-								<div class="form-group">
-									<label>Código: 0001</label>
-									<!-- Esse código será automático pelo sistema 
-										 ID sequencial do BD -->																
-								</div>
-								<!-- Tipo - combo-box -->
-								<div class="form-group">
-									<label>Tipo do armamento</label>
-									<select class="form-control">
-										<option>Pistola</option>
-										<option>Revólver</option>
-										<option>Espingarda</option>
-										<option>Carabina</option>
-										<option>Fuzil</option>
-										<option>Metralhadora</option>
-									</select>
-								</div>
-							
+							<div class="form-group">
+							<fieldset>				
 								<!-- Fabricante da arma -->
 								<div class="form-group">
-									<label>Fabricante:</label>
-									<input class="form-control" placeholder="Nome do fabricante">
+									<label>Número:</label>
+									<input class="form-control" placeholder="Número de registro">
+								</div>
+								
+								<!-- Calendário -->
+								<div class="panel panel-red">
+									<div class="panel-heading dark-overlay"><svg class="glyph stroked calendar"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroked-calendar"></use></svg>Data de validade</div>
+									<div class="panel-body">
+									<div id="calendar"><div class="datepicker datepicker-inline"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;">«</th><th colspan="5" class="datepicker-switch">Junho 2016</th><th class="next" style="visibility: visible;">»</th></tr><tr><th class="dow">Dom</th><th class="dow">Seg</th><th class="dow">Ter</th><th class="dow">Qua</th><th class="dow">Qui</th><th class="dow">Sex</th><th class="dow">Sab</th></tr></thead><tbody><tr><td class="old day">29</td><td class="old day">30</td><td class="old day">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="active day">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="new day">1</td><td class="new day">2</td></tr><tr><td class="new day">3</td><td class="new day">4</td><td class="new day">5</td><td class="new day">6</td><td class="new day">7</td><td class="new day">8</td><td class="new day">9</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;">«</th><th colspan="5" class="datepicker-switch">2016</th><th class="next" style="visibility: visible;">»</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Fev</span><span class="month">Mar</span><span class="month">Abr</span><span class="month">Mai</span><span class="month active">Jun</span><span class="month">Jul</span><span class="month">Ago</span><span class="month">Set</span><span class="month">Out</span><span class="month">Nov</span><span class="month">Dez</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;">«</th><th colspan="5" class="datepicker-switch">2010-2019</th><th class="next" style="visibility: visible;">»</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year active">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year new">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div></div></div>
 								</div>
 								
 								<div class="form-group">
-									<label>Modelo:</label>
-									<input class="form-control" placeholder="Descrição do modelo">
-								</div>
-								
-								<div class="form-group">
-									<label>Calibre:</label>
-									<input class="form-control" placeholder="Calibre da arma">
+									<label>Código da Arma:</label>
+									<input class="form-control" placeholder="ID da arma vinculada a esse registro">
 								</div>
 								
 								<!-- Form actions -->

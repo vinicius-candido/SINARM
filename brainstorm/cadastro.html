@@ -1,4 +1,9 @@
-<title>Sinarm - Cadastro</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SINARM Digital - Sistema Nacional de Armas</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
@@ -6,7 +11,7 @@
 
 <!--Icons-->
 <script src="js/lumino.glyphs.js"></script>
-<meta charset="utf-8">
+
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
@@ -24,32 +29,30 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span>SINARM </span> Admin</a>
-				<ul class="user-menu">
+				<a class="navbar-brand" href="index.html"><span>SINARM Digital -</span> Sistema Nacional de Armas</a>
+				<!-- <ul class="user-menu">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Usuário <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> UsuÃ¡rio <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="perfil.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Perfil</a></li>
 							<li><a href="config.html"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Configurações</a></li>
 							<li><a href="login.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 							
 		</div><!-- /.container-fluid -->
 	</nav>
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<form role="search">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
-			</div>
-		</form>
 		<ul class="nav menu">
-			<li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Principal</a></li>
-			<li class="active"><a href="cadastro.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastro</a></li>
-			
+			<li ><a href="index.html"><svg class="glyph stroked home"><use xlink:href="#stroked-home"/></svg> Principal</a></li>
+			<li class="active"><a href="cadastro.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastro arma</a></li>
+			<li><a href="cadastropessoa.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg>Cadastrar Pessoa</a> </li>
+			<li><a href="#"><svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg>Consultar Pessoa</a> </li>
+			<li><a href="#"><svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg>Consultar Armas</a> </li>
+
 			
 			</li>
 			<li role="presentation" class="divider"></li>
@@ -62,144 +65,77 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.html"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Cadastro</li>
+				<li class="active"></li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Cadastro</h1>
+				<h1 class="page-header">SINARM - Cadastro de Arma de Fogo</h1>
 			</div>
 		</div><!--/.row-->
-				
 		
+		<!--BOTÕES DO HOME DE ADM-->
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="row">
+			<div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading">Cadastro de Arma</div>
 					<div class="panel-body">
 						<div class="col-md-6">
 							<form role="form">
-							
 								<div class="form-group">
-									<label>Text Input</label>
-									<input class="form-control" placeholder="Placeholder">
-								</div>
-																
-								<div class="form-group">
-									<label>Password</label>
-									<input type="password" class="form-control">
-								</div>
+								<fieldset>
+									<!-- Tipo - combo-box -->
+										<label>Tipo do armamento</label>
+										<select class="form-control">
+											<option>Pistola</option>
+											<option>Revólver</option>
+											<option>Espingarda</option>
+											<option>Carabina</option>
+											<option>Fuzil</option>
+											<option>Metralhadora</option>
+										</select>
+									</div>
 								
-								<div class="form-group checkbox">
-								  <label>
-								    <input type="checkbox">Remember me</label>
-								</div>
-																
-								<div class="form-group">
-									<label>File input</label>
-									<input type="file">
-									 <p class="help-block">Example block-level help text here.</p>
-								</div>
-								
-								<div class="form-group">
-									<label>Text area</label>
-									<textarea class="form-control" rows="3"></textarea>
-								</div>
-								
-								<label>Validation</label>
-								<div class="form-group has-success">
-									<input class="form-control" placeholder="Success">
-								</div>
-								<div class="form-group has-warning">
-									<input class="form-control" placeholder="Warning">
-								</div>
-								<div class="form-group has-error">
-									<input class="form-control" placeholder="Error">
-								</div>
-								
+									<!-- Fabricante da arma -->
+									<div class="form-group">
+										<label>Fabricante:</label>
+										<input class="form-control" placeholder="Nome do fabricante">
+									</div>
+									
+									<div class="form-group">
+										<label>Modelo:</label>
+										<input class="form-control" placeholder="Descrição do modelo">
+									</div>
+									
+									<div class="form-group">
+										<label>Calibre:</label>
+										<input class="form-control" placeholder="Calibre da arma">
+									</div>
+									
+									<!-- Form actions -->
+									<div class="form-group">
+										<div class="col-md-12 widget-right">
+											<button type="submit" class="btn btn-default btn-md pull-right">Cadastrar</button>
+										</div>
+									</div>
+								</fieldset>
 							</div>
-							<div class="col-md-6">
-							
-								<div class="form-group">
-									<label>Checkboxes</label>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">Checkbox 1
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">Checkbox 2
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">Checkbox 3
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">Checkbox 4
-										</label>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<label>Radio Buttons</label>
-									<div class="radio">
-										<label>
-											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio Button 1
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio Button 2
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio Button 3
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio Button 4
-										</label>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<label>Selects</label>
-									<select class="form-control">
-										<option>Option 1</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-										<option>Option 4</option>
-									</select>
-								</div>
-								
-								<div class="form-group">
-									<label>Multiple Selects</label>
-									<select multiple class="form-control">
-										<option>Option 1</option>
-										<option>Option 2</option>
-										<option>Option 3</option>
-										<option>Option 4</option>
-									</select>
-								</div>
-								
-								<button type="submit" class="btn btn-primary">Submit Button</button>
-								<button type="reset" class="btn btn-default">Reset Button</button>
+							<div>
+								<p>BAGUNCA DA PORRA</p>
 							</div>
 						</form>
-					</div>
+						
+							
 				</div>
-			</div><!-- /.col-->
-		</div><!-- /.row -->
+			
+		</div><!--/.row-->
 		
-	</div><!--/.main-->
-
+		<div class="row">
+			
+		</div><!--/.row-->
+								
+		
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
@@ -208,11 +144,14 @@
 	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script>
+		$('#calendar').datepicker({
+		});
+
 		!function ($) {
-			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
-				$(this).find('em:first').toggleClass("glyphicon-minus");	  
-			}); 
-			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
 		}(window.jQuery);
 
 		$(window).on('resize', function () {
@@ -225,4 +164,3 @@
 </body>
 
 </html>
-

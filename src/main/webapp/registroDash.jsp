@@ -60,108 +60,43 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Home</li>
+				<li class="active">Gerenciamento de Registros</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">SINARM - Home</h1>
+				<h1 class="page-header">SINARM - Registros de Arma de Fogo</h1>
 			</div>
 		</div><!--/.row-->
 		
 		<!--BOTÕES DO HOME DE ADM-->
 		<div class="row">
-			<div class="col-xs-12 col-md-6 col-lg-3"><a href="cadastroPessoa.jsp">
-				<div class="panel panel-blue panel-widget ">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">Cadastrar Pessoa</div>
-						</div>
-					</div></a>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3"><a href="consultaPessoa.jsp">
-				<div class="panel panel-orange panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">Consultar Pessoa</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3"><a href="cadastroArma.jsp">
+			<div class="col-xs-12 col-md-6 col-lg-3"><a href="cadastroRegistro.jsp">
 				<div class="panel panel-teal panel-widget">
 					<div class="row no-padding">
 						<div class="col-sm-3 col-lg-5 widget-left">
 							<svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">Cadastrar Arma</div>
+							<div class="large">Cadastrar Registro</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3"><a href="consultaArma.jsp">
+			<div class="col-xs-12 col-md-6 col-lg-3"><a href="consultaRegistro.jsp">
 				<div class="panel panel-red panel-widget">
 					<div class="row no-padding">
 						<div class="col-sm-3 col-lg-5 widget-left">
 							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">Consultar Armas</div>
+							<div class="large">Consultar Registros existentes</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->
-		
-		<!-- Dados percentuais -->
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>New Orders</h4>
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Comments</h4>
-						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>New Users</h4>
-						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Visitors</h4>
-						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-								
 		
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
