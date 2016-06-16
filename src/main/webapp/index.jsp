@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span>SINARM Digital -</span> Sistema Nacional de Armas</a>
+				<a class="navbar-brand" href="index.jsp"><span>SINARM Digital -</span> Sistema Nacional de Armas</a>
 				<!-- <ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Usu√°rio <span class="caret"></span></a>
@@ -47,13 +47,13 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Principal</a></li>
-			<li><a href="cadastro.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastro</a></li>
+			<li class="active"><a href="index.jsp"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Home</a></li>
+			<li><a href="cadastro.jsp"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastro</a></li>
 			
 			
 			</li>
 			<li role="presentation" class="divider"></li>
-			<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Sair</a></li>
+			<li><a href="login.jsp"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Sair</a></li>
 		</ul>
 
 	</div><!--/.sidebar-->
@@ -61,7 +61,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="index.html"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+				<li><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
 				<li class="active">Home</li>
 			</ol>
 		</div><!--/.row-->
@@ -72,16 +72,17 @@
 			</div>
 		</div><!--/.row-->
 		
+		<!--BOT’ES DO HOME DE ADM-->
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-blue panel-widget "><a href="cadastro.html">
+				<div class="panel panel-blue panel-widget "><a href="cadastroPessoa.jsp">
 					<div class="row no-padding">
 						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked pencil"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroked-pencil"></use></svg>
+							<svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
-							<div class="text-muted">Bolsinha</div>
+							<div class="large">Cadastrar Pessoa</div>
+						<!--<div class="text-muted">Bolsinha</div>-->
 						</div>
 					</div></a>
 				</div>
@@ -90,11 +91,11 @@
 				<div class="panel panel-orange panel-widget">
 					<div class="row no-padding">
 						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
+							<svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52</div>
-							<div class="text-muted">Comments</div>
+							<div class="large">Consultar Pessoa</div>
+							<!--<div class="text-muted">Comments</div>-->
 						</div>
 					</div>
 				</div>
@@ -104,10 +105,11 @@
 					<div class="row no-padding">
 						<div class="col-sm-3 col-lg-5 widget-left">
 							<svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
+							<svg class=""></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
-							<div class="text-muted">New Users</div>
+							<div class="large">Cadastrar Arma</div>
+							<!--<div class="text-muted">New Users</div>-->
 						</div>
 					</div>
 				</div>
@@ -116,48 +118,16 @@
 				<div class="panel panel-red panel-widget">
 					<div class="row no-padding">
 						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
+							<svg class="glyph stroked gun-scope"><use xlink:href="#stroked-gun-scope"></use></svg>
+							<span class="glyphicons glyphicons-database-search"></span>
+							<!--<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>-->
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">25.2k</div>
-							<div class="text-muted">Page Views</div>
+							<div class="large">Consultar Armas</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-lg-12">
-			
-				<h2>Novidades</h2>
-			</div>
-			<div class="col-md-12">
-				<div class="panel panel-default">
-					<div class="panel-body tabs">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
-							<li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
-							<li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
-						</ul>
-		
-						<div class="tab-content">
-							<div class="tab-pane fade in active" id="tab1">
-								<h4>Tab 1</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
-							</div>
-							<div class="tab-pane fade" id="tab2">
-								<h4>Tab 2</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
-							</div>
-							<div class="tab-pane fade" id="tab3">
-								<h4>Tab 3</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
-							</div>
-						</div>
-					</div>
-				</div><!--/.panel-->
-			</div><!--/.col-->
 		</div><!--/.row-->
 		
 		<div class="row">
