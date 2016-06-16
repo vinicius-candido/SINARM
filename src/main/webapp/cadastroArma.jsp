@@ -62,7 +62,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Home</li>
+				<li class="active"></li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -78,10 +78,11 @@
 			<div class="col-md-8">
 				<div class="panel panel-default">
 					<div class="panel-body">
-						<form class="form-horizontal" action="" method="post">
+						<div class="col-md-6">
+						<form role="form">
+							<div class="form-group">
 							<fieldset>
 								<!-- Tipo - combo-box -->
-								<div class="form-group">
 									<label>Tipo do armamento</label>
 									<select class="form-control">
 										<option>Pistola</option>
@@ -104,10 +105,15 @@
 									<input class="form-control" placeholder="Descrição do modelo">
 								</div>
 								
+								<div class="form-group">
+									<label>Calibre:</label>
+									<input class="form-control" placeholder="Calibre da arma">
+								</div>
+								
 								<!-- Form actions -->
 								<div class="form-group">
 									<div class="col-md-12 widget-right">
-										<button type="submit" class="btn btn-default btn-md pull-right">Submit</button>
+										<button type="submit" class="btn btn-default btn-md pull-right">Cadastrar</button>
 									</div>
 								</div>
 							</fieldset>
