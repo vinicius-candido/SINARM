@@ -80,7 +80,6 @@
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
 							<div class="large">Cadastrar Pessoa</div>
-						<!--<div class="text-muted">Bolsinha</div>-->
 						</div>
 					</div></a>
 				</div>
@@ -123,6 +122,7 @@
 			</div>
 		</div><!--/.row-->
 		
+		<!-- Dados percentuais -->
 		<div class="row">
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-default">

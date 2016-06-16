@@ -47,82 +47,80 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu">
-			<li class="active"><a href="index.jsp"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Home</a></li>
-			<li><a href="cadastro.jsp"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastro</a></li>
-			
-			
-			</li>
+			<li class="active"><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"/></svg> Home</a></li>
+			<li><a href="pessoaDash.jsp"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Pessoa</a></li>
+			<li><a href="armaDash.jsp"><svg class="glyph stroked key "><use xlink:href="#stroked-key"/></svg> Arma</a></li>
+			<li><a href="registroDash.jsp"><svg class="glyph stroked table"><use xlink:href="#stroked-table"/></svg> Registro de armas</a></li>
 			<li role="presentation" class="divider"></li>
-			<li><a href="login.jsp"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Sair</a></li>
+			<li><a href="login.jsp"><svg class="glyph stroked lock"><use xlink:href="#stroked-lock"/></svg> Sair</a></li>
 		</ul>
-
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active"></li>
+				<li class="active">Home</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">SINARM - Cadastro de Arma de Fogo</h1>
+				<h1 class="page-header">SINARM - Home</h1>
 			</div>
 		</div><!--/.row-->
 		
 		<!--BOTÕES DO HOME DE ADM-->
 		<div class="row">
-			<div class="row">
-			<div class="col-md-8">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="col-md-6">
-						<form role="form">
-							<div class="form-group">
-							<fieldset>
-								<!-- Tipo - combo-box -->
-									<label>Tipo do armamento</label>
-									<select class="form-control">
-										<option>Pistola</option>
-										<option>Revólver</option>
-										<option>Espingarda</option>
-										<option>Carabina</option>
-										<option>Fuzil</option>
-										<option>Metralhadora</option>
-									</select>
-								</div>
-							
-								<!-- Fabricante da arma -->
-								<div class="form-group">
-									<label>Fabricante:</label>
-									<input class="form-control" placeholder="Nome do fabricante">
-								</div>
-								
-								<div class="form-group">
-									<label>Modelo:</label>
-									<input class="form-control" placeholder="Descrição do modelo">
-								</div>
-								
-								<div class="form-group">
-									<label>Calibre:</label>
-									<input class="form-control" placeholder="Calibre da arma">
-								</div>
-								
-								<!-- Form actions -->
-								<div class="form-group">
-									<div class="col-md-12 widget-right">
-										<button type="submit" class="btn btn-default btn-md pull-right">Cadastrar</button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
+			<div class="col-xs-12 col-md-6 col-lg-3"><a href="cadastroArma.jsp">
+				<div class="panel panel-teal panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 widget-left">
+							<svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg>
+						</div>
+						<div class="col-sm-9 col-lg-7 widget-right">
+							<div class="large">Cadastrar Arma</div>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3"><a href="consultaArma.jsp">
+				<div class="panel panel-red panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 widget-left">
+							<svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
+						</div>
+						<div class="col-sm-9 col-lg-7 widget-right">
+							<div class="large">Consultar Armas</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div><!--/.row-->
-										
 		
+		<!-- Dados percentuais -->
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Calibre permitido</h4>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Armas curtas</h4>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
