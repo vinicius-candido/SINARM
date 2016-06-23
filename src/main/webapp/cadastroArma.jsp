@@ -71,7 +71,7 @@
 		</div><!--/.row-->
 		
 		<!--BOTÕES DO HOME DE ADM-->
-		<div class="row">
+		
 			<div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
