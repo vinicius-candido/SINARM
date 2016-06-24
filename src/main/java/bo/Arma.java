@@ -1,17 +1,27 @@
 package bo;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Arma {
-	private static int armaID;
+	@Id
+	private String armaID;
 	private String fabricante;
 	private String modelo;
 	private String calibre;
+	private String tipo;
+	@OneToOne(cascade=CascadeType.MERGE)
+	private Registro reg; 
 
-	public static int getArmaID() {
+	public String getArmaID() {
 		return armaID;
 	}
 
-	public static void setArmaID(int armaID) {
-		Arma.armaID = armaID;
+	public void setArmaID(String armaID) {
+		this.armaID = armaID;
 	}
 
 	public String getFabricante() {
@@ -36,6 +46,22 @@ public class Arma {
 
 	public void setCalibre(String calibre) {
 		this.calibre = calibre;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public Registro getReg() {
+		return reg;
+	}
+
+	public void setReg(Registro reg) {
+		this.reg = reg;
 	}
 
 }
