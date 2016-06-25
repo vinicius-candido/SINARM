@@ -79,15 +79,15 @@
 						<div class="col-md-6">
 						<form role="form">
 							<fieldset>
+								<!-- ArmaID -->
 								<div class="form-group">
-									<label>Código: 0001</label>
-									<!-- Esse código será automático pelo sistema 
-										 ID sequencial do BD -->																
+									<label>Código da arma:</label>
+									<input class="form-control" placeholder="Código da arma" param="${param.ID}">
 								</div>
 								<!-- Tipo - combo-box -->
 								<div class="form-group">
 									<label>Tipo do armamento</label>
-									<select class="form-control">
+									<select class="form-control" param="${param.tipo}">
 										<option>Pistola</option>
 										<option>Revólver</option>
 										<option>Espingarda</option>
@@ -100,17 +100,17 @@
 								<!-- Fabricante da arma -->
 								<div class="form-group">
 									<label>Fabricante:</label>
-									<input class="form-control" placeholder="Nome do fabricante">
+									<input class="form-control" placeholder="Nome do fabricante" param="${param.fabricante}">
 								</div>
 								
 								<div class="form-group">
 									<label>Modelo:</label>
-									<input class="form-control" placeholder="Descrição do modelo">
+									<input class="form-control" placeholder="Descrição do modelo" param="${param.modelo}">
 								</div>
 								
 								<div class="form-group">
 									<label>Calibre:</label>
-									<input class="form-control" placeholder="Calibre da arma">
+									<input class="form-control" placeholder="Calibre da arma" param="${param.calibre}">
 								</div>
 								
 								<!-- Form actions -->
