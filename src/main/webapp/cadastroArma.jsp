@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@page import="bo.Arma"%>
+<%@page import="java.util.List"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -121,10 +123,16 @@
 								</div>
 							</fieldset>
 						</form>
+						<br>
+						<%-- <%
+							Arma arma = (Arma) request.getAttribute("arma");
+						%>
+						<div class="alert alert\-danger" role="alert">Informe o código da arma.</div>
+						<div class="alert alert-success" role="alert">Código da arma: <%=arma.getArmaID() %></div> --%>
 					</div>
 				</div>
 		</div><!--/.row-->
-										
+	
 		
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

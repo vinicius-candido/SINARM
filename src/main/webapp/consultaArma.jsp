@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@page import="bo.Arma"%>
+<%@page import="java.util.List"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -90,6 +92,40 @@
 						    </tr>
 						    </thead>
 						</table>
+						<table class="table">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Tipo</th>
+      <th>Fabricante</th>
+      <th>Modelo</th>
+      <th>Calibre</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%
+List<Arma> armas = (List<Arma>) request.getAttribute("armas");
+if (armas != null && !armas.isEmpty()) {
+  for (Arma a:armas) {
+%>
+    <tr>
+      <th><%=a.getArmaID()%></th>
+      <td><%=a.getTipo()%></td>
+      <td><%=a.getFabricante()%></td>
+      <td><%=a.getModelo()%></td>
+      <td><%=a.getCalibre()%></td>
+      <td><a href="#">Alterar</a></td>
+      <td><a href="#">Excluir</a></td>
+    </tr>
+<%
+  }
+}
+%>
+  </tbody>
+
+</table>
 					</div>
 				</div>
 			</div>
