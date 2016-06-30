@@ -32,10 +32,10 @@
 				<a class="navbar-brand" href="index.jsp"><span>SINARM Digital -</span> Sistema Nacional de Armas</a>
 				<!-- <ul class="user-menu">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Usuário <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> UsuÃ¡rio <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="perfil.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Perfil</a></li>
-							<li><a href="config.html"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Configura��es</a></li>
+							<li><a href="config.html"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Configurações</a></li>
 							<li><a href="login.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 						</ul>
 					</li>
@@ -70,7 +70,7 @@
 			</div>
 		</div><!--/.row-->
 		
-		<!--BOT�ES DO HOME DE ADM-->
+		<!--BOTÕES DO HOME DE ADM-->
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-lg-3"><a href="cadastroPessoa.jsp">
 				<div class="panel panel-blue panel-widget ">
@@ -191,3 +191,5 @@
 </body>
 
 </html>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>

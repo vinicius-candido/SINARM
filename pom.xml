@@ -15,6 +15,13 @@
 	</properties>
 
 	<dependencies>
+		
+		<!-- Banco de Dados MySql -->
+		<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.17</version>
+        </dependency>
 
 		<!-- Banco de Dados Derby e Driver JDBC -->
 		<dependency>
