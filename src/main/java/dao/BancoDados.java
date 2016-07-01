@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class BancoDados {
   public static void main(String[] args) throws SQLException {
     // MySQL
-    dbc:mysql://linkconexaobd
+    String url = "jdbc:mysql://localhost:3306/sinarm";
     Connection conn = DriverManager.getConnection(url);
     conn.close();
   }

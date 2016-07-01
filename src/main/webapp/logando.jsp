@@ -1,6 +1,6 @@
 <%@ page import="java.sql.*"%>
 <%
-    String userName = request.getParameter("uname");   
+    String userName = request.getParameter("userName");   
     String password = request.getParameter("password");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sinarm",
             "root", "cs2016-1");
@@ -11,6 +11,6 @@
         session.setAttribute("userid", userName);
         response.sendRedirect("index.jsp");
     } else {
-        out.println("Invalid password <a href='index.jsp'>try again</a>");
+        out.println("Login ou senha inválidos <a href='login.jsp'>TENTE NOVAMENTE</a>");
     }
 %>

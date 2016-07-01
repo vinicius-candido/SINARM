@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%--<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>Cadastrar Login</h2>
-<%--     <table>
+     <table>
       <form name="frmCadastrarLogin" action="CadastroLogin" method="post">
      
       <tr> 
@@ -64,8 +64,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+    
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registration</title>
+        <title>Cadastrar Login</title>
     </head>
     <body bgcolor="silver">
         <form method="post" action="cadastrando.jsp">
@@ -73,40 +74,48 @@
             <table border="1" width="30%" cellpadding="5">
                 <thead>
                     <tr>
-                        <th colspan="2">Enter Information Here</th>
+                        <th colspan="2">Entre com suas Informações</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>First Name</td>
-                        <td><input type="text" name="firstName" value="" /></td>
+                        <td>Nome</td>
+                        <td><input type="text" name="firstName" value="" required="required"/><span class="required"></span></td>
+                       
                     </tr>
                     <tr>
-                        <td>Last Name</td>
-                        <td><input type="text" name="lastName" value="" /></td>
+                        <td>Sobrenome</td>
+                        <td><input type="text" name="lastName" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td><input type="text" name="email" value="" /></td>
+                        <td><input type="text" name="email" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>
-                        <td>User Name</td>
-                        <td><input type="text" name="userName" value="" /></td>
+                        <td>Usuário</td>
+                        <td><input type="text" name="userName" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
-                        <td><input type="password" name="password" value="" /></td>
+                        <td>Senha</td>
+                        <td><input type="password" name="password" value="" required="required"/><span class="required"></span></td>
                     </tr>
+                    <tr>                  
+
+                        <td><input type="submit" value="Criar" /></td>
+                        <td><input type="reset" value="Limpar" /></td>
+                        
+                    </tr>
+                    
                     <tr>
-                        <td><input type="submit" value="Submit" /></td>
-                        <td><input type="reset" value="Reset" /></td>
+                        <td colspan="2">Se possui conta <a href="login.jsp">CLIQUE AQUI</a></td>
                     </tr>
-                    <tr>
-                        <td colspan="2">Already registered!! <a href="login.jsp">Login Here</a></td>
-                    </tr>
+                    
                 </tbody>
+                
             </table>
+            
             </center>
-        </form>
+       </form>
+       
     </body>
 </html>
