@@ -79,17 +79,17 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="col-md-6">
-						<form role="form">
+						<form method="post" action="cadastrandoArma.jsp">
 							<fieldset>
 								<!-- ArmaID -->
 								<div class="form-group">
 									<label>Código da arma:</label>
-									<input class="form-control" placeholder="Código da arma" param="${param.ID}">
+									<input type="text" name="codigo" value="" class="form-control" placeholder="Código da arma" param="${param.ID}">
 								</div>
 								<!-- Tipo - combo-box -->
 								<div class="form-group">
 									<label>Tipo do armamento</label>
-									<select class="form-control" param="${param.tipo}">
+									<select type="text" name="tipo" value="" class="form-control" param="${param.tipo}">
 										<option>Pistola</option>
 										<option>Revólver</option>
 										<option>Espingarda</option>
@@ -102,17 +102,17 @@
 								<!-- Fabricante da arma -->
 								<div class="form-group">
 									<label>Fabricante:</label>
-									<input class="form-control" placeholder="Nome do fabricante" param="${param.fabricante}">
+									<input type="text" name="fabricante" value="" class="form-control" placeholder="Nome do fabricante" param="${param.fabricante}">
 								</div>
 								
 								<div class="form-group">
 									<label>Modelo:</label>
-									<input class="form-control" placeholder="Descrição do modelo" param="${param.modelo}">
+									<input type="text" name="modelo" value="" class="form-control" placeholder="Descrição do modelo" param="${param.modelo}">
 								</div>
 								
 								<div class="form-group">
 									<label>Calibre:</label>
-									<input class="form-control" placeholder="Calibre da arma" param="${param.calibre}">
+									<input type="text" name="calibre" value="" class="form-control" placeholder="Calibre da arma" param="${param.calibre}">
 								</div>
 								
 								<!-- Form actions -->
