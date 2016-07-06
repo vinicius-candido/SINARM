@@ -13,7 +13,7 @@
     + tipo + "','" + fabricante + "','" + modelo + "','" + calibre + "', CURDATE())");
    
    if (i > 0) {
-        response.sendRedirect("welcome.jsp");
+        response.sendRedirect("cadastroArmaPOPUP.jsp");
   }
     
     else {

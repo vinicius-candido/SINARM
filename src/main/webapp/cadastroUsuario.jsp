@@ -69,7 +69,7 @@
         <title>Cadastrar Login</title>
     </head>
     <body bgcolor="silver">
-        <form method="post" action="cadastrando.jsp">
+        <form method="post" action="cadastrandoUsuario.jsp">
             <center>
             <table border="1" width="30%" cellpadding="5">
                 <thead>

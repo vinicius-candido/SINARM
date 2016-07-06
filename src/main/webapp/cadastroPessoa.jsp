@@ -139,6 +139,7 @@
 								<div class="form-group">
 									<div class="col-md-12 widget-right">
 										<button type="submit" class="btn btn-default btn-md pull-right">Cadastrar</button>
+										
 									</div>
 								</div>
 							</fieldset>

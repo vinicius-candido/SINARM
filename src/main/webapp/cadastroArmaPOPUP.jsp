@@ -24,10 +24,10 @@ function abrir()
 
 <div  id="openModal" class="modalDialog">
 	<div>
-		<a href="cadastroUsuario.jsp" title="Close" class="close">X</a>
+		<a href="cadastroArma.jsp" title="Close" class="close">X</a>
 		<h2>Sucesso</h2>
-		<p>Usuário cadastrado com sucesso!</p>
-		<p><a href="cadastroPessoa.jsp">CLIQUE AQUI</a> para logar.</p>
+		<p>Arma cadastrada com sucesso!</p>
+		<p>Feche ou <a href="cadastroArma.jsp">CLIQUE AQUI</a> para voltar.</p>
 	</div>
 </div>
 </body>
