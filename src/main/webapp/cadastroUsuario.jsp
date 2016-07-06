@@ -78,25 +78,26 @@
                     </tr>
                 </thead>
                 <tbody>
+                <td>Campos Obrigatórios (*)</td>
                     <tr>
-                        <td>Nome</td>
+                        <td>*Nome</td>
                         <td><input type="text" name="firstName" value="" required="required"/><span class="required"></span></td>
                        
                     </tr>
                     <tr>
-                        <td>Sobrenome</td>
+                        <td>*Sobrenome</td>
                         <td><input type="text" name="lastName" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
+                        <td>*Email</td>
                         <td><input type="text" name="email" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>
-                        <td>Usuário</td>
+                        <td>*Usuário</td>
                         <td><input type="text" name="userName" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>
-                        <td>Senha</td>
+                        <td>*Senha</td>
                         <td><input type="password" name="password" value="" required="required"/><span class="required"></span></td>
                     </tr>
                     <tr>                  
