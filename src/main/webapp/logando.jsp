@@ -11,6 +11,6 @@
         session.setAttribute("userid", userName);
         response.sendRedirect("index.jsp");
     } else {
-        out.println("Login ou senha inválidos <a href='login.jsp'>TENTE NOVAMENTE</a>");
+    	response.sendRedirect("usuarioInvalidoPOPUP.jsp");
     }
 %>
