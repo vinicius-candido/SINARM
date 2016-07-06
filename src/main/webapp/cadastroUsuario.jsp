@@ -21,21 +21,14 @@
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
             <div class="login-panel panel panel-default">
-
+                <div class="panel-heading">Entre com suas informações</div>
+                <div class="panel-body">
                 <form method="post" action="cadastrandoUsuario.jsp">
-                    
-                    
-                        
-                            <h3>
-                               Entre com suas Informações
-                            </h3>
-                        
-                        
                     
                             <div class="form-group">
                                 
                                 Nome
-                                <input class="form-control" type="text" name="firstName" value="" required="required" placeholder="Digite seu nome">
+                                <input class="form-control" type="text" name="firstName" value="" required="required" placeholder="Digite seu nome" autofocus="">
                                
                             </div>
                             <div class="form-group">
@@ -68,6 +61,7 @@
                     
                     
                </form>
+               </div>
             </div>
         </div>
     </div>

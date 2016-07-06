@@ -28,7 +28,7 @@
 						<form method="post" action="logando.jsp">
 						
 							<div class="form-group">
-								<input class="form-control"input type="text" name="userName" value="" placeholder="Usuário"  autofocus="">
+								<input class="form-control" input type="text" name="userName" value="" placeholder="Usuário"  autofocus="">
 							</div>
 							<div class="form-group">
 								<input class="form-control" placeholder="Password" input type="password" name="password" value="">
