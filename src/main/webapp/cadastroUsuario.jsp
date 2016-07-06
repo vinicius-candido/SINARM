@@ -1,122 +1,76 @@
-<%--<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Cadastrar Login</title>
-</head>
-<body>
-    <h2>Cadastrar Login</h2>
-     <table>
-      <form name="frmCadastrarLogin" action="CadastroLogin" method="post">
-     
-      <tr> 
-        <td>Nome.:</td><td><input type="text" name="txtUsuario"></td>
-        <td>Senha.:</td><td><input type="password" name="txtSenha"></td>
-     
-          <td colspan="2"><input type="submit" value="cadastrar"/></td>      
-     
-      </form>
-    
-    </table>
-    <BODY>
-        <H1>Tipo de Usuario</H1>
-        <FORM ACTION="formAction.jsp" METHOD="post">
-             <INPUT TYPE="radio" NAME="radios" VALUE="radio1" CHECKED>
-             UsuÃ¡rio Comum
-            <BR>
-            <INPUT TYPE="radio" NAME="radios" VALUE="radio2">
-             Administrador
-            <BR>
-            <INPUT TYPE="submit" VALUE="Submit">
-        </FORM>
-    </BODY>
-</HTML>
-
-<HTML>
-    <HEAD>
-        <TITLE>Reading Radio Buttons</TITLE>
-    </HEAD>
-
-    <BODY>
-        <%
-            if(request.getParameter("radios") != null) {
-                if(request.getParameter("radios").equals("radio1")) {
-                    out.println("Radio button 1 was selected.<BR>");
-                }
-                else {
-                    out.println("Radio button 1 was not selected.<BR>");
-                }
-                if(request.getParameter("radios").equals("radio2")) {
-                    out.println("Radio button 2 was selected.<BR>");
-                }
-                else {
-                    out.println("Radio button 2 was not selected.<BR>");
-                }
-              
-            }
-        %>
-    </BODY>
-  
-</body>
-</html> --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-    
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Login</title>
-    </head>
-    <body bgcolor="silver">
-        <form method="post" action="cadastrandoUsuario.jsp">
-            <center>
-            <table border="1" width="30%" cellpadding="5">
-                <thead>
-                    <tr>
-                        <th colspan="2">Entre com suas Informações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <td>Campos Obrigatórios (*)</td>
-                    <tr>
-                        <td>*Nome</td>
-                        <td><input type="text" name="firstName" value="" required="required"/><span class="required"></span></td>
-                       
-                    </tr>
-                    <tr>
-                        <td>*Sobrenome</td>
-                        <td><input type="text" name="lastName" value="" required="required"/><span class="required"></span></td>
-                    </tr>
-                    <tr>
-                        <td>*Email</td>
-                        <td><input type="text" name="email" value="" required="required"/><span class="required"></span></td>
-                    </tr>
-                    <tr>
-                        <td>*Usuário</td>
-                        <td><input type="text" name="userName" value="" required="required"/><span class="required"></span></td>
-                    </tr>
-                    <tr>
-                        <td>*Senha</td>
-                        <td><input type="password" name="password" value="" required="required"/><span class="required"></span></td>
-                    </tr>
-                    <tr>                  
+<head>
+    <!--<%@page contentType="text/html" pageEncoding="UTF-8"%>-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SINARM - Bem vindo(a)</title>
 
-                        <td><input type="submit" value="Criar" /></td>
-                        <td><input type="reset" value="Limpar" /></td>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/datepicker3.css" rel="stylesheet">
+    <link href="resources/css/styles.css" rel="stylesheet">
+
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+
+                <form method="post" action="cadastrandoUsuario.jsp">
+                    
+                    
                         
-                    </tr>
+                            <h3>
+                               Entre com suas Informações
+                            </h3>
+                        
+                        
                     
-                    <tr>
-                        <td colspan="2">Se possui conta <a href="login.jsp">CLIQUE AQUI</a></td>
-                    </tr>
+                            <div class="form-group">
+                                
+                                Nome
+                                <input class="form-control" type="text" name="firstName" value="" required="required" placeholder="Digite seu nome">
+                               
+                            </div>
+                            <div class="form-group">
+                                Sobrenome
+                                <input class="form-control" type="text" name="lastName" value="" required="required" placeholder="Digite seu sobrenome">
+                            <div class="form-group">
+                                Email
+                                <input class="form-control" type="text" name="email" value="" required="required" placeholder="email@exemplo.com.br">
+                            </div>
+                            <div class="form-group">
+                                Usuário
+                                <input class="form-control" type="text" name="userName" value="" required="required" placeholder="Digite seu usuario">
+                            </div>
+                            <div class="form-group">
+                                Senha
+                                <input class="form-control" type="password" name="password" value="" required="required" placeholder="Digite sua senha">
+                            </div>
+                                       
+
+                                <input type="submit" value="Criar" class="btn btn-primary">
+                                <input type="reset"  value="Limpar" class = "btn btn-default">
+                                
+                            
+                            
+                            <tr>
+                                <td colspan="2">Se possui conta <a href="login.jsp">CLIQUE AQUI</a></td>
+                            </tr>
+                            
+                        
                     
-                </tbody>
-                
-            </table>
-            
-            </center>
-       </form>
-       
-    </body>
+                    
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
