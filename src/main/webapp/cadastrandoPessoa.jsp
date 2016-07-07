@@ -12,8 +12,8 @@
     String estado = request.getParameter("estado");
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sinarm","root", "cs2016-1");
     Statement st = con.createStatement();
-    int i = st.executeUpdate("insert into PESSOA(nome, clube, cpf, registro_licensa, rua, complemento, setor, cidade, estado, regdate) values ('" + nome + "','"
-    + clube + "','" + cpf + "','" + registro +"','"+rua+"','"+complemento+"','"+setor+"','"+cidade+"','"+estado+ "', CURDATE())");
+    int i = st.executeUpdate("insert into PESSOA(nome, clube, cpf, registro_licensa, rua, complemento, setor, cidade, estado) values ('" + nome + "','"
+    + clube + "','" + cpf + "','" + registro +"','"+rua+"','"+complemento+"','"+setor+"','"+cidade+"','"+estado+ "')");
    
    if (i > 0) {
 	   response.sendRedirect("cadastroPessoaPOPUP.jsp");

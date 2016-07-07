@@ -81,17 +81,16 @@
 						<div class="col-md-6">
 						<form method="post" action="cadastrandoArma.jsp">
 							<fieldset>
-							<div class="form-group">
-									<label>Campos Obrigatórios (*)</label>						
+							<div class="form-group">					
 								</div>
 								<!-- ArmaID -->
 								<div class="form-group">
-									<label>*Código da arma:</label>
+									<label>Código da arma:</label>
 									<input type="text" name="codigo" value="" class="form-control" placeholder="Código da arma" param="${param.ID}" required="required"/><span class="required"></span>
 								</div>
 								<!-- Tipo - combo-box -->
 								<div class="form-group">
-									<label>*Tipo do armamento</label>
+									<label>Tipo do armamento</label>
 									<select type="text" name="tipo" value="" class="form-control" param="${param.tipo}">
 										<option>Pistola</option>
 										<option>Revólver</option>
@@ -104,17 +103,17 @@
 							
 								<!-- Fabricante da arma -->
 								<div class="form-group">
-									<label>*Fabricante:</label>
+									<label>Fabricante:</label>
 									<input type="text" name="fabricante" value="" class="form-control" placeholder="Nome do fabricante"  param="${param.fabricante}" required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Modelo:</label>
+									<label>Modelo:</label>
 									<input type="text" name="modelo" value="" class="form-control" placeholder="Descrição do modelo" param="${param.modelo}" required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Calibre:</label>
+									<label>Calibre:</label>
 									<input type="text" name="calibre" value="" class="form-control" placeholder="Calibre da arma" param="${param.calibre}" required="required"/><span class="required"></span>
 								</div>
 								

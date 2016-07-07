@@ -81,15 +81,14 @@
 						<div class="col-md-6">
 						<form method="post" action="cadastrandoPessoa.jsp">
 							<fieldset>
-							<label>Campos Obrigatórios (*)</label>
 								<!-- ArmaID -->
 								<div class="form-group">
-									<label>*Nome:</label>
+									<label>Nome:</label>
 									<input type="text" name="nome" value="" class="form-control" placeholder="Digite seu nome" param="${param.ID}"required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Cpf:</label>
+									<label>Cpf:</label>
 									<input type="text" name="cpf" value="" class="form-control" placeholder="Digite o cpf" param="${param.modelo}"required="required"/><span class="required"></span>
 								</div>
 								
@@ -105,34 +104,34 @@
 							
 								<!-- Fabricante da arma -->
 								<div class="form-group">
-									<label>*Registro da licensa:</label>
+									<label>Registro da licensa:</label>
 									<input type="text" name="registro" value="" class="form-control" placeholder="Digite o registro de sua licensa" param="${param.fabricante}" required="required"/><span class="required"></span>
 								</div>
 								
 								
 								
 								<div class="form-group">
-									<label>*Rua:</label>
+									<label>Rua:</label>
 									<input type="text" name="rua" value="" class="form-control" placeholder="Digite sua rua" param="${param.calibre}"required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Complemento:</label>
+									<label>Complemento:</label>
 									<input type="text" name="complemento" value="" class="form-control" placeholder="Digite um complemento" param="${param.calibre}"required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Setor:</label>
+									<label>Setor:</label>
 									<input type="text" name="setor" value="" class="form-control" placeholder="Digite seu bairro" param="${param.calibre}"required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Cidade:</label>
+									<label>Cidade:</label>
 									<input type="text" name="cidade" value="" class="form-control" placeholder="Digite sua cidade" param="${param.calibre}"required="required"/><span class="required"></span>
 								</div>
 								
 								<div class="form-group">
-									<label>*Estado:</label>
+									<label>Estado:</label>
 									<input type="text" name="estado" value="" class="form-control" placeholder="Digite seu Estado" param="${param.calibre}"required="required"/><span class="required"></span>
 								</div>
 								

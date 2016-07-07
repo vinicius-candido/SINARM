@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@page import="bo.Arma"%>
 <%@page import="java.util.List"%>
+<%@ page import="java.sql.*"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -80,17 +82,7 @@
 					<div class="panel-heading">Consulta de armas</div>
 					<div class="panel-body">
 						<table data-toggle="table" data-url="resources/tables/data1.json"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
-						    <thead>
-						    <tr>
-						        <th data-field="state" data-checkbox="true" >Status Ativo/Inativo</th>
-						        <th data-field="id" data-sortable="true">ID</th>
-						        <th data-field="price" data-sortable="true">Tipo</th>
-						        <th data-field="name"  data-sortable="true">Fabricante</th>
-						        <th data-field="price" data-sortable="true">Modelo</th>
-						        <th data-field="price" data-sortable="true">Calibre</th>
-						        <th data-field="price" data-sortable="true">Doc. Propriet√°rio</th>
-						    </tr>
-						    </thead>
+						    
 						</table>
 						<table class="table">
   <thead>
@@ -104,24 +96,46 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
-<%
-List<Arma> armas = (List<Arma>) request.getAttribute("armas");
-if (armas != null && !armas.isEmpty()) {
-  for (Arma a:armas) {
+  <%
+  try
+  {
+  	Class.forName("com.mysql.jdbc.Driver");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sinarm",
+            "root", "cs2016-1");
+    Statement st = con.createStatement();
+    ResultSet rs;
+    rs = st.executeQuery("select * from arma");
+    while (rs.next()) 
+    {
+ 
+    	
 %>
+    	
+    	
+
+  <tbody>
+
+
     <tr>
-      <th><%=a.getArmaID()%></th>
-      <td><%=a.getTipo()%></td>
-      <td><%=a.getFabricante()%></td>
-      <td><%=a.getModelo()%></td>
-      <td><%=a.getCalibre()%></td>
+      <th><%=rs.getString("codigo")%></th>
+      <th><%=rs.getString("tipo")%></th>
+      <th><%=rs.getString("fabricante")%></th>
+      <th><%=rs.getString("modelo")%></th>
+      <th><%=rs.getString("calibre")%></th>
       <td><a href="#">Alterar</a></td>
       <td><a href="#">Excluir</a></td>
-    </tr>
-<%
-  }
-}
+  </tr>
+<%        }   
+    }
+    
+    catch(ClassNotFoundException erroClass)
+    {
+    	out.println("Classe Driver JDBC n„o foi localizado, erro = "+erroClass);
+    }
+    catch(SQLException erroSQL)
+    {
+    	out.println("Erro de conex„o com o Banco de dados, erro = "+erroSQL);
+    }
 %>
   </tbody>
 

@@ -64,13 +64,13 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Consulta de Pessoas</li>
+				<li class="active">Consulta de Registro</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">SINARM - Consultar Pessoas</h1>
+				<h1 class="page-header">SINARM - Consultar Registro</h1>
 			</div>
 		</div><!--/.row-->
 
@@ -79,7 +79,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Consulta de pessoas</div>
+					<div class="panel-heading">Consulta de registro</div>
 					<div class="panel-body">
 						<table data-toggle="table" data-url="resources/tables/data1.json"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 						    
@@ -87,15 +87,9 @@
 						<table class="table">
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Clube</th>
-      <th>Cpf</th>
+      <th>Código</th>
       <th>Registro</th>
-      <th>Rua</th>
-      <th>Complemento</th>
-      <th>Setor</th>
-      <th>Cidade</th>
-      <th>Estado</th>
+      <th>Data</th>
       <th></th>
       <th></th>
     </tr>
@@ -108,7 +102,7 @@
             "root", "cs2016-1");
     Statement st = con.createStatement();
     ResultSet rs;
-    rs = st.executeQuery("select * from pessoa");
+    rs = st.executeQuery("select * from register");
     while (rs.next()) 
     {
  
@@ -121,15 +115,9 @@
 
 
     <tr>
-      <th><%=rs.getString("nome")%></th>
-      <th><%=rs.getString("clube")%></th>
-      <th><%=rs.getString("cpf")%></th>
-      <th><%=rs.getString("registro_licensa")%></th>
-      <th><%=rs.getString("rua")%></th>
-      <th><%=rs.getString("complemento")%></th>
-      <th><%=rs.getString("setor")%></th>
-      <th><%=rs.getString("cidade")%></th>
-      <th><%=rs.getString("estado")%></th>
+      <th><%=rs.getString("code")%></th>
+      <th><%=rs.getString("registro")%></th>
+      <th><%=rs.getString("data")%></th>
       <td><a href="#">Alterar</a></td>
       <td><a href="#">Excluir</a></td>
   </tr>
